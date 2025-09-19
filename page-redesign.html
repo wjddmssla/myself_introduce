@@ -19,11 +19,43 @@
         margin: 0 auto;
         justify-content: center;
     }
+
+    .top, .fixed2 {
+      width: 100px;
+      height: auto;
+    }
+
+    .fixed {
+      position: fixed;
+      right: 100px;
+      bottom: 100px;
+    }
+
+    .fixed:hover {
+      opacity: 0.8;
+    }
+
+    .fixed2 {
+      position: fixed;
+      right: 100px;
+      bottom: 40px;
+    }
+
+    .fixed2:hover {
+      opacity: 0.8;
+    }
   </style>
 </head>
 <body>
     <div id="main-wrap">
         <img src="image/laboh.jpg" alt="상세페이지 리디자인">
     </div>
+
+    <div class="top fixed">
+		  <a href="#"><img src="image/top.png" alt="top"></a>
+	  </div>
+	  <div class="fixed2">
+		  <a href="index.html#projects" onclick="window.close()"><img src="image/back.png" alt="back"></a>
+	  </div>
 </body>
 </html>
